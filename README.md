@@ -31,3 +31,10 @@
   1.清理无效代码和资源，修改不规范代码  
   2.重写网络请求和数据解析
   
+捐赠支持
+
+BTC：3AU5QZb591Vs63SAzdhebBZpQ6qj9GVCNm
+
+LTC：33tZdhUBqhB2s3JoUEsuBhHQ75taW12WAc
+
+ETH：0x38d7f0c2d5054941717bde236a7f0aa94e89d5af
