@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 内部颜色 -->
+    <solid
+        android:color="#ffffff" />
+    <!-- 边缘线条颜色 -->
+    <stroke
+        android:width="1dp"
+        android:color="@color/hangqing_tab" />
+    <!-- 圆角的幅度 -->
+    <corners
+        android:topLeftRadius="5dip"
+        android:topRightRadius="5dip"
+        android:bottomLeftRadius="5dip"
+        android:bottomRightRadius="5dip" />
+
+</shape>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181B2A"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="#181B2A"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/icon_back_gray"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tvCurrencyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="BTC/USDT"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/ibMessage"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@mipmap/icon_change_show"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/ivFullScreen"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/icon_full_screen"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3361688A"/>
+
+    <com.spark.szhb_master.ui.intercept.WonderfulViewPager
+        android:id="@+id/vpKline"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3361688A"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tabIndicatorColor="#ffffff"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabTextAppearance="@style/k_tab"
+            app:tabTextColor="#61688A"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tvBuy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/typeGreen"
+            android:gravity="center"
+            android:text="买入BTC"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvSell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/typeRed"
+            android:gravity="center"
+            android:text="卖出BTC"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <FrameLayout
+            android:layout_width="72dp"
+            android:background="#13151c"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_collect"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:text="添加自选"
+                android:textColor="@color/white"
+                android:drawablePadding="2dp"
+                android:textSize="12sp"
+                android:drawableTop="@mipmap/icon_collect_no"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

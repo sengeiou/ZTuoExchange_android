@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/ivCollect"
+            android:layout_width="24dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:src="@mipmap/icon_collect_yes"/>
+
+        <TextView
+            android:id="@+id/tvOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="USDT"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvClose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="$17600.00"
+            android:textColor="#DF5051"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvUpRose"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:background="@drawable/selector_market_up_down"
+            android:gravity="center"
+            android:text="+15.00%"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+
+</LinearLayout>

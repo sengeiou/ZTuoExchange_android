@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.ztuo.base.CustomHorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#fff"
+    android:layout_margin="10dp"
+    android:scrollbars="none"
+    >
+
+<LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:id="@+id/line_bj"
+   >
+<TextView
+    android:id="@+id/text_star"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    android:text="2018-06-25"
+    android:textSize="11sp"
+    android:layout_marginLeft="3dp"
+    />
+    <TextView
+        android:id="@+id/text_bhbjunjia"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="0.0002"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        android:textSize="11sp"
+        />
+    <TextView
+        android:id="@+id/text_shouxufeizong"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="23456789.88"
+        android:gravity="center"
+        android:layout_marginLeft="90dp"
+        android:textSize="11sp"
+        />
+    <TextView
+        android:id="@+id/text_wkfanhuan"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="238558855.737"
+        android:gravity="center"
+        android:layout_marginLeft="90dp"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:id="@+id/text_beizeng"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="9232656546.54545"
+        android:gravity="center"
+        android:layout_marginLeft="110dp"
+        android:textSize="11sp"
+        />
+
+</LinearLayout>
+</cn.ztuo.base.CustomHorizontalScrollView>

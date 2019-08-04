@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.ztuo.base.CustomHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="10dp"
+    android:background="@color/primaryBackNormal"
+    android:scrollbars="none">
+
+    <LinearLayout
+
+        android:id="@+id/line_bj"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_star"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical"
+            android:text="2018-06-25 14:00:00"
+            android:textColor="@color/primaryText"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/text_dui"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="BTC/USDT"
+            android:textColor="@color/primaryText"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/text_fangxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="限价卖出"
+            android:textColor="@color/primaryText"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/text_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="100.00USDT"
+            android:textColor="@color/primaryText"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/text_weituo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="1000.00BHB"
+            android:textColor="@color/primaryText"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/text_yichengjiao"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="1000.00BHB"
+            android:textColor="@color/primaryText"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/text_shouxufei"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="100.00USDT"
+            android:textColor="@color/primaryText"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+</cn.ztuo.base.CustomHorizontalScrollView>

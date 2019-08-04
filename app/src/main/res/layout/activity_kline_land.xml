@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181B2A"
+    tools:context="cn.ztuo.ui.kline.KlineLandActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#181B2A"
+        android:orientation="vertical">
+
+        <cn.ztuo.customview.intercept.WonderfulViewPager
+            android:id="@+id/vpKline"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#181B2A"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#3361688A"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:tabGravity="center"
+            app:tabIndicatorColor="#ffffff"
+            app:tabMaxWidth="64dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabTextAppearance="@style/k_tab"
+            app:tabTextColor="#61688A"/>
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/ibBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:src="@mipmap/icon_full_screen_black"/>
+
+</RelativeLayout>

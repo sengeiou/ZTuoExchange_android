@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primaryBackDark"
+    tools:context="cn.ztuo.ui.wallet_detail.WalletDetailActivity">
+
+    <!--标题-->
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/primaryBackNormal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/icon_back_gray"
+            android:visibility="visible"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:text="@string/jy_chakan"
+            android:textColor="@color/primaryText"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/ibCalendar"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:src="@mipmap/icon_calendar"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+<cn.ztuo.base.CustomHorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_biaoge_xia"
+    android:layout_margin="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/jiaoyi_time"
+                android:textSize="11sp"
+                android:textColor="@color/primaryText"
+                android:layout_marginRight="70dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+
+                android:text="@string/jiaoyi_dui"
+                android:textSize="11sp"
+                android:textColor="@color/primaryText"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/jiaoyi_fangxiang"
+                android:layout_marginLeft="60dp"
+                android:textSize="11sp"
+                android:textColor="@color/primaryText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/jiaoyi_jiage"
+                android:layout_marginLeft="50dp"
+                android:textSize="11sp"
+                android:textColor="@color/primaryText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/jiaoyi_weituoliang"
+                android:layout_marginLeft="40dp"
+                android:textSize="11sp"
+                android:textColor="@color/primaryText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/jiaoyi_yichengjiao"
+                android:layout_marginLeft="50dp"
+                android:textSize="11sp"
+                android:textColor="@color/primaryText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/jiaoyi_shouxufei"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="50dp"
+                android:textSize="11sp"
+                android:textColor="@color/primaryText"
+                />
+
+        </LinearLayout>
+        <cn.ztuo.base.LinListView
+            android:id="@+id/listview_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            >
+        </cn.ztuo.base.LinListView>
+
+    </LinearLayout>
+
+</cn.ztuo.base.CustomHorizontalScrollView>
+
+</LinearLayout>
+

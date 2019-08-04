@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBackDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/primaryBackNormal">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/icon_back_gray"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/language"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/ibMessage"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/llChinese"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/primaryBackNormal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/simplifiedChinese"
+            android:textColor="@color/primaryText"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/ivChinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/icon_select"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/llEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/primaryBackNormal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="English"
+            android:textColor="@color/primaryText"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/ivEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/icon_select"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/llJapanese"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/primaryBackNormal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/Japanese"
+            android:textColor="@color/primaryText"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/ivJapanese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/icon_select"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

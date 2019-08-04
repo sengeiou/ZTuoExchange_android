@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#20232C</color>
+    <color name="colorAccent">#e15414</color>
+    <color name="colorTextNormal">#999999</color>
+    <color name="colorPrimaryLight">#2C303B</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="primaryBackLight">#1F2833</color>
+    <color name="primaryBackNormal">#1A212A</color>
+    <color name="primaryBackDark">#13161d</color>
+    <color name="primaryText">#e5e5e5</color>
+    <color name="primaryTextGray">#999999</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_c5c5c5">#c5c5c5</color>
+
+    <!--<color name="text_1b9c42">#1b9c42</color>
+    <color name="text_e22220">#e22220</color>
+    <color name="text_4ba64a">#03c087</color>-->
+    <color name="grey_f6f6f6">#f6f6f6</color>
+
+    <color name="grey_dde1e7">#DDE1E7</color>
+
+    <!--<color name="red_f4333c">#F4333C</color>
+    <color name="text_03c087">#03c087</color>-->
+    <color name="text_143551">#143551</color>
+    <color name="grey_e3e7e8">#E3E7E8</color>
+    <color name="text_4462a5">#4462a5</color>
+    <color name="text_f0f3f8">#f0f3f8</color>
+    <color name="typeGreen">#00b275</color>
+    <color name="typeRed">#f15057</color>
+    <color name="typeGray">#c5c8ce</color>
+
+    <!--<color name="typeGreen">#4BA64A</color>
+    <color name="typeRed">#E22220</color>-->
+
+    <color name="bgBlue">#EFF1F5</color>
+    <color name="baseBlue">#4462A5</color>
+    <color name="btnBlue">#20242b</color>
+    <color name="yellowDark">#f0a70a</color>
+    <color name="yellowLight">#edca76</color>
+    <color name="yellowDark_sell">#d0b387</color>
+    <color name="yellowBack">#ffa020</color>
+
+    <color name="color_gray">#e6e6e6</color>
+    <color name="color_green">#0f9e3b</color>
+    <color name="color_green1">#00b275</color>
+    <color name="color_green2">#00b275</color>
+    <color name="color_green3">#cccccc</color>
+    <color name="color_green4">#5ccea7</color>
+    <color name="color_green5">#5ccea7</color>
+
+
+
+    <color name="main_bg_kline">#181B2A</color>
+    <color name="main_bg_kline_hover">#0B0C0F</color>
+    <color name="color_font_kline">#A2A2A2</color>
+    <color name="bg_kline_bottom">#13151C</color>
+    <color name="heise">#ffffff</color>
+    <color name="home_bg">#fafafa</color>
+    <color name="home_ziti">#999999</color>
+    <color name="home_ziti1">#666666</color>
+    <color name="hangqing_bg">#fafafa</color>
+    <color name="hangqing_tab">#f5f5f5</color>
+    <color name="my_zi">#fd7652</color>
+    <color name="background_gray">#f5f5f8</color>
+    <color name="text_orange">#f0a70a</color>
+    <color name="text_black_light">#424950</color>
+    <color name="green_back">#2035DF7E</color>
+    <color name="red_back">#20DF3536</color>
+    <color name="timeCome1">#3597d0</color>
+    <color name="timeCome2">#4acc75</color>
+    <color name="glay3">#F0F0F0</color>
+    <color name="black">#000000</color>
+    <color name="bg_color">#EDEDED</color>
+
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.ztuo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="cn.ztuo.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_cm_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_cm_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cn.ztuo.fileprovider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--Umeng-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="" />
+
+        <activity
+            android:name="cn.ztuo.ui.home.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.ztuo.ui.login.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.common.LeadActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.common.PermissionActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.common.StartActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="cn.ztuo.ui.kline.KlineActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.kline.KlineLandActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="cn.ztuo.ui.signup.SignUpActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.forgot_pwd.ForgotPwdActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.myinfo.MyInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.wallet.WalletActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.wallet_detail.WalletDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.my_order.MyOrderActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.my_ads.AdsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.message.MessageActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.credit.CreditActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.setting.SettingActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.feed.FeedbackActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ztuo.ui.aboutus.AboutUsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="cn.ztuo.ui.releaseAd.ReleaseAdsActivity" />
+        <activity android:name="cn.ztuo.ui.country.CountryActivity" />
+        <activity android:name="cn.ztuo.ui.account_pwd.AccountPwdActivity" />
+        <activity android:name="cn.ztuo.ui.buy_or_sell.C2CBuyOrSellActivity" />
+        <activity android:name="cn.ztuo.ui.recharge.RechargeActivity" />
+        <activity android:name="cn.ztuo.ui.extract.ExtractActivity" />
+        <activity android:name="cn.ztuo.ui.extract.AddressActivity" />
+        <activity android:name="cn.ztuo.ui.bind_phone.BindPhoneActivity" />
+        <activity android:name="cn.ztuo.ui.bind_email.BindEmailActivity" />
+        <activity android:name="cn.ztuo.ui.bind_email.EmailActivity" />
+        <activity android:name="cn.ztuo.ui.edit_login_pwd.EditLoginPwdActivity" />
+        <activity android:name="cn.ztuo.ui.bind_phone.PhoneActivity" />
+        <activity android:name="cn.ztuo.ui.change_phone.ChangePhoneActivity" />
+        <activity android:name="cn.ztuo.ui.change_phone.ChangeLeadActivity" />
+        <activity android:name="cn.ztuo.ui.message_detail.MessageDetailActivity" />
+        <activity android:name="cn.ztuo.ui.lock.LockActivity" />
+        <activity
+            android:name="cn.ztuo.ui.set_lock.SetLockActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="cn.ztuo.ui.order_detail.OrderDetailActivity" />
+        <activity android:name="cn.ztuo.ui.appeal.AppealActivity" />
+        <activity android:name="cn.ztuo.ui.account_pwd.EditAccountPwdActivity" />
+        <activity android:name="cn.ztuo.ui.account_pwd.ResetAccountPwdActivity" />
+        <activity android:name="cn.ztuo.ui.chatlist.ChatListActivity" />
+        <activity android:name="cn.ztuo.ui.chat.ChatActivity" />
+        <activity android:name=".ui.entrust.TrustListActivity"></activity>
+        <activity android:name="cn.ztuo.ui.entrust.TrustDetailActivity" />
+        <activity android:name="cn.ztuo.ui.myEntrust.MyEntrustActivity"></activity>
+        <activity android:name="cn.ztuo.ui.bind_account.BindAccountActivity" />
+        <activity android:name="cn.ztuo.ui.bind_account.BindAliActivity" />
+        <activity android:name="cn.ztuo.ui.bind_account.BindBankActivity" />
+        <activity android:name="cn.ztuo.ui.bind_account.BindWeiChatActivity" />
+
+        <!--新加的-->
+        <activity android:name=".ui.wallet.XiangQiangActivity"></activity>
+        <activity android:name=".ui.aboutus.AboutJianJieActivity"></activity>
+        <activity android:name=".ui.aboutus.AboutWeiXinActivity"></activity>
+        <activity android:name=".ui.wallet.ChongBiJLActivity"></activity>
+        <activity android:name=".ui.wallet.TiBiJLActivity"></activity>
+        <activity android:name=".ui.setting.GongGaoActivity"></activity>
+        <activity android:name=".ui.setting.HelpActivity"></activity>
+        <activity android:name=".ui.message_detail.MessageHelpActivity"></activity>
+        <activity android:name=".ui.setting.HelpXinShouActivity"></activity>
+        <activity android:name=".ui.setting.HelpChangjianActivity"></activity>
+        <activity android:name=".ui.credit.CreditInfoActivity"></activity>
+        <activity android:name=".ui.seller.SellerApplyActivity"></activity>
+        <activity android:name=".ui.seller.SellerApplyCommitActivity"></activity>
+        <activity android:name=".ui.aboutus.AddUrlActivity" />
+
+        <service android:name="cn.ztuo.serivce.MyService" />
+        <service android:name="cn.ztuo.serivce.MyBindService" />
+        <service android:name=".serivce.MyTextService" />
+
+        <receiver android:name="com.maiml.updatelibrary.receiver.InstallReceiver">
+            <intent-filter android:priority="20">
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>
